@@ -2,7 +2,7 @@ import { Box, Button, Flex, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 import {HiHomeModern} from "react-icons/hi2"
-import { navigationLinks } from '../../NavigationConsts'
+import { navigationLinks } from '../../navigationConsts'
 
 const NavigationDesktop = () => {
   return (
