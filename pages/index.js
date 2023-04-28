@@ -1,12 +1,9 @@
-import Footer from "@/features/common/modules/Footer/Footery"
-import Navigation from "@/features/common/modules/Navigation/Navigationy"
+import DefaultLayout from "@/features/layouts/defaultLayout/DefaultLayouty"
 
 export default function Home() {
   return (
     <>
-      <Navigation />
-      <Footer />
-
+      <DefaultLayout></DefaultLayout>
     </>
   )
 }
