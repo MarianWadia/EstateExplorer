@@ -9,10 +9,10 @@ const Footer = () => {
     <>
         <Box backgroundColor="blue.500">
             <Box 
-              marginY="0 auto" 
+              margin="0 auto"
               maxWidth="1028px" 
               paddingY="3rem" 
-              paddingX={{base: "2rem", sm: "0" }}             
+              paddingX={{base: "2rem", sm: "0" }}  
             >
               <SimpleGrid columns="4" color="whiteAlpha.700" minChildWidth="150px" gap="1.7rem">
                 <Flex direction="column" >
