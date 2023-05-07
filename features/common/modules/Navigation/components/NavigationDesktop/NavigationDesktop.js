@@ -9,9 +9,9 @@ const NavigationDesktop = () => {
     // * the box from chakra is as div and for the display attribute where base means for the mobile screeens and md means for medium screens
     <>
     {/* The box for whole Nav Component */}
-      <Box color="blue.500" backgroundColor="white" paddingY="2rem" display={{base: "none", md: "block"}}>
+      <Box color="blue.500" backgroundColor="white" padding="2rem" display={{base: "none", md: "block"}}>
         {/* Another box for nav inside the parent*/}
-        <Box margin="0 auto" maxWidth="1280px">
+        <Box margin="0 auto" maxWidth="1280px" >
             <Flex justifyContent="space-between" alignItems="center">
               {/* The box for left side of the flex contaienr */}
               <Link href="/">
@@ -20,7 +20,7 @@ const NavigationDesktop = () => {
                   <Text fontSize="2xl" fontWeight="black">EstateExplorer</Text>
                 </Box>
               </Link>
-                <Box display="flex" direction="row" gap="12" alignItems="center">
+                <Box display="flex" direction="row" gap={{md: "8", lg: "12"}} alignItems="center">
                   {navigationLinks.map((link, index)=>{
                     return(
                       <Link href={link.link} key={index}>

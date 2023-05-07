@@ -30,10 +30,12 @@ const HeroBanner = () => {
             left="0"
           >
           <Box width={{base: "100%", sm: "50%"}}>
-            <Text fontSize={{base: "4xl", sm: "5xl"}} lineHeight="shorter" marginBottom="1.5rem">
+            <Text fontSize={{base: "3xl", lg: "5xl"}} lineHeight="shorter" marginBottom="1.5rem">
               Download Our new <strong>Property Buyig Guide</strong> Today...
             </Text>
-            <Text fontSize={{base:"md", sm:"2xl"}} color="gray.400" fontWeight="light" marginBottom={{base: "3rem", md: "0"}}>A Free PDF with our best secrets for evaluating a property purchase, calculating profit and so much more.</Text>
+            <Text fontSize={{base:"md", md:"2xl"}} color="gray.400" fontWeight="light" marginBottom={{base: "1rem", lg:"0"}}>
+              A Free PDF with our best secrets for evaluating a property purchase, calculating profit and so much more.
+            </Text>
           </Box>
           <Box width={{base: "100%", sm:"auto"}} marginRight={{base: "0", md:"-5"}}><HeroForm /></Box>
           </Box>
