@@ -5,11 +5,13 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import PropertyCard from '@/features/common/modules/PropertyCard/PropertyCardy'
+import { useIsDesktop } from '@/features/common/Hooks/useIsDesktopy'
 
 const PropertySlider = ({featuredProperties}) => {
+  const {isDesktop} = useIsDesktop();
   return (
     <Swiper
-        slidesPerView={2}
+        slidesPerView={isDesktop?3:1}
         spaceBetween={10}
         loop={true}
         centeredSlides={true}
